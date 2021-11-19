@@ -16,3 +16,11 @@ div{
 h1{
     padding: 20px;
 }
+
+ul{
+    list-style: none;
+}
+
+li{
+    margin-bottom: 20px;
+}

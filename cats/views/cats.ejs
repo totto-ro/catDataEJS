@@ -10,8 +10,15 @@
     <body>
         <h1>Kitty cats:</h1>
         <div>
-            <img src="/images/cat01.jpg" alt="Cat01">
-            <img src="/images/cat02.jpg" alt="Cat02">
+            <ul>
+                <% for(let i = 0; i < cats.length; i++){ %>
+                    <li>
+                        <a href="/<%= cats[i].name %>">
+                            <img src="<%= cats[i].image %>" alt="cat image">
+                        </a>
+                    </li>
+                <% } %>
+            </ul>
         </div>
     </body>
 </html>
